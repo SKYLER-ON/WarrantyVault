@@ -1,0 +1,24 @@
+{
+  "name": "warrantyvault-backend",
+  "version": "1.0.0",
+  "description": "WarrantyVault - Digital Warranty & Service Claim Manager (Express + Supabase + Gemini)",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "dev": "node --watch --env-file=.env src/server.js",
+    "seed": "node --env-file=.env src/scripts/seed.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.6"
+  },
+  "dependencies": {
+    "@google/genai": "^2.28.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "multer": "^2.0.0"
+  },
+  "license": "MIT"
+}
